@@ -1,0 +1,14 @@
+c:\users\kaewphiphop\documents\visual studio 2010\Projects\WebsiteKtech\WebsiteKtech\bin\WebsiteKtech.dll
+c:\users\kaewphiphop\documents\visual studio 2010\Projects\WebsiteKtech\WebsiteKtech\bin\WebsiteKtech.pdb
+c:\users\kaewphiphop\documents\visual studio 2010\Projects\WebsiteKtech\WebsiteKtech\obj\Debug\WebsiteKtech.dll
+c:\users\kaewphiphop\documents\visual studio 2010\Projects\WebsiteKtech\WebsiteKtech\obj\Debug\WebsiteKtech.pdb
+C:\Users\SPANDUM\Desktop\WebsiteKtech\WebsiteKtech\bin\WebsiteKtech.dll
+C:\Users\SPANDUM\Desktop\WebsiteKtech\WebsiteKtech\bin\WebsiteKtech.pdb
+C:\Users\SPANDUM\Desktop\WebsiteKtech\WebsiteKtech\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SPANDUM\Desktop\WebsiteKtech\WebsiteKtech\obj\Debug\WebsiteKtech.dll
+C:\Users\SPANDUM\Desktop\WebsiteKtech\WebsiteKtech\obj\Debug\WebsiteKtech.pdb
+C:\Users\Juluwan\Desktop\WebsiteKtech_new\WebsiteKtech\bin\WebsiteKtech.dll
+C:\Users\Juluwan\Desktop\WebsiteKtech_new\WebsiteKtech\bin\WebsiteKtech.pdb
+C:\Users\Juluwan\Desktop\WebsiteKtech_new\WebsiteKtech\obj\Debug\WebsiteKtech.dll
+C:\Users\Juluwan\Desktop\WebsiteKtech_new\WebsiteKtech\obj\Debug\WebsiteKtech.pdb
+C:\Users\Juluwan\Desktop\WebsiteKtech_new\WebsiteKtech\obj\Debug\WebsiteKtech.csprojResolveAssemblyReference.cache

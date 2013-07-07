@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A70F819D-9E77-4C24-AD02-C8DA5F987948}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebsiteKtech</RootNamespace>
+    <AssemblyName>WebsiteKtech</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\addBusiness.aspx" />
+    <Content Include="admin\addCalendar.aspx" />
+    <Content Include="admin\addDownload.aspx" />
+    <Content Include="admin\addMarquee.aspx" />
+    <Content Include="admin\addVip.aspx" />
+    <Content Include="admin\adminnews.aspx" />
+    <Content Include="admin\adminshowmarquee.aspx" />
+    <Content Include="admin\adminshownews.aspx" />
+    <Content Include="admin\businessAdmin.aspx" />
+    <Content Include="admin\calendarShowAdmin.aspx" />
+    <Content Include="admin\deleteBusiness.aspx" />
+    <Content Include="admin\deleteCalendar.aspx" />
+    <Content Include="admin\deleteDownload.aspx" />
+    <Content Include="admin\deleteVip.aspx" />
+    <Content Include="admin\downloadShowAdmin.aspx" />
+    <Content Include="admin\HomeAdmin.aspx" />
+    <Content Include="admin\Logout.aspx" />
+    <Content Include="admin\marqueeAdmin.aspx" />
+    <Content Include="admin\News.aspx" />
+    <Content Include="admin\vipAdmin.aspx" />
+    <Content Include="bootstrap\bg.png" />
+    <Content Include="bootstrap\bg2.png" />
+    <Content Include="bootstrap\bg3.png" />
+    <Content Include="bootstrap\bg4.png" />
+    <Content Include="bootstrap\bg5.png" />
+    <Content Include="bootstrap\bg6.png" />
+    <Content Include="bootstrap\bg7.gif" />
+    <Content Include="bootstrap\bg8.gif" />
+    <Content Include="fancybox\images\1.jpg" />
+    <Content Include="fancybox\images\10.jpg" />
+    <Content Include="fancybox\images\2.jpg" />
+    <Content Include="fancybox\images\3.jpg" />
+    <Content Include="fancybox\images\4.jpg" />
+    <Content Include="fancybox\images\5.jpg" />
+    <Content Include="fancybox\images\6.jpg" />
+    <Content Include="fancybox\images\7.jpg" />
+    <Content Include="fancybox\images\8.jpg" />
+    <Content Include="fancybox\images\9.jpg" />
+    <Content Include="fancybox\images\title_building.png" />
+    <Content Include="fancybox\images\_1.jpg" />
+    <Content Include="fancybox\images\_10.jpg" />
+    <Content Include="fancybox\images\_2.jpg" />
+    <Content Include="fancybox\images\_3.jpg" />
+    <Content Include="fancybox\images\_4.jpg" />
+    <Content Include="fancybox\images\_5.jpg" />
+    <Content Include="fancybox\images\_6.jpg" />
+    <Content Include="fancybox\images\_7.jpg" />
+    <Content Include="fancybox\images\_8.jpg" />
+    <Content Include="fancybox\images\_9.jpg" />
+    <Content Include="fancybox\lib\jquery-1.10.1.min.js" />
+    <Content Include="fancybox\lib\jquery-1.9.0.min.js" />
+    <Content Include="fancybox\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="fancybox\source\blank.gif" />
+    <Content Include="fancybox\source\fancybox_loading%402x.gif" />
+    <Content Include="fancybox\source\fancybox_loading.gif" />
+    <Content Include="fancybox\source\fancybox_overlay.png" />
+    <Content Include="fancybox\source\fancybox_sprite%402x.png" />
+    <Content Include="fancybox\source\fancybox_sprite.png" />
+    <Content Include="fancybox\source\helpers\fancybox_buttons.png" />
+    <Content Include="fancybox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="fancybox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="fancybox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="fancybox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="fancybox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="fancybox\source\jquery.fancybox.css" />
+    <Content Include="fancybox\source\jquery.fancybox.js" />
+    <Content Include="fancybox\source\jquery.fancybox.pack.js" />
+    <Content Include="images\for_vip.png" />
+    <Content Include="images\MOU.png" />
+    <Content Include="js\builder.js" />
+    <Content Include="js\effects.js" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="js\prototype.js" />
+    <Content Include="js\scriptaculous.js" />
+    <Content Include="Pages\act_pic1.aspx" />
+    <Content Include="Pages\act_pic1\1.jpg" />
+    <Content Include="Pages\act_pic1\10.jpg" />
+    <Content Include="Pages\act_pic1\11.jpg" />
+    <Content Include="Pages\act_pic1\12.jpg" />
+    <Content Include="Pages\act_pic1\13.jpg" />
+    <Content Include="Pages\act_pic1\14.jpg" />
+    <Content Include="Pages\act_pic1\15.jpg" />
+    <Content Include="Pages\act_pic1\16.jpg" />
+    <Content Include="Pages\act_pic1\17.jpg" />
+    <Content Include="Pages\act_pic1\18.jpg" />
+    <Content Include="Pages\act_pic1\19.jpg" />
+    <Content Include="Pages\act_pic1\2.jpg" />
+    <Content Include="Pages\act_pic1\20.jpg" />
+    <Content Include="Pages\act_pic1\21.jpg" />
+    <Content Include="Pages\act_pic1\22.jpg" />
+    <Content Include="Pages\act_pic1\23.jpg" />
+    <Content Include="Pages\act_pic1\24.jpg" />
+    <Content Include="Pages\act_pic1\25.jpg" />
+    <Content Include="Pages\act_pic1\26.jpg" />
+    <Content Include="Pages\act_pic1\27.jpg" />
+    <Content Include="Pages\act_pic1\28.jpg" />
+    <Content Include="Pages\act_pic1\29.jpg" />
+    <Content Include="Pages\act_pic1\3.jpg" />
+    <Content Include="Pages\act_pic1\30.jpg" />
+    <Content Include="Pages\act_pic1\31.jpg" />
+    <Content Include="Pages\act_pic1\4.jpg" />
+    <Content Include="Pages\act_pic1\5.jpg" />
+    <Content Include="Pages\act_pic1\6.jpg" />
+    <Content Include="Pages\act_pic1\7.jpg" />
+    <Content Include="Pages\act_pic1\8.jpg" />
+    <Content Include="Pages\act_pic1\9.jpg" />
+    <Content Include="Pages\act_pic1\pcs7.png" />
+    <Content Include="Pages\act_pic2.aspx" />
+    <Content Include="Pages\act_pic2\1.jpg" />
+    <Content Include="Pages\act_pic2\10.jpg" />
+    <Content Include="Pages\act_pic2\11.jpg" />
+    <Content Include="Pages\act_pic2\12.JPG" />
+    <Content Include="Pages\act_pic2\13.JPG" />
+    <Content Include="Pages\act_pic2\14.JPG" />
+    <Content Include="Pages\act_pic2\15.JPG" />
+    <Content Include="Pages\act_pic2\16.jpg" />
+    <Content Include="Pages\act_pic2\2.jpg" />
+    <Content Include="Pages\act_pic2\3.jpg" />
+    <Content Include="Pages\act_pic2\4.jpg" />
+    <Content Include="Pages\act_pic2\5.jpg" />
+    <Content Include="Pages\act_pic2\6.jpg" />
+    <Content Include="Pages\act_pic2\7.jpg" />
+    <Content Include="Pages\act_pic2\8.jpg" />
+    <Content Include="Pages\act_pic2\9.jpg" />
+    <Content Include="Pages\act_pic2\pcs7.png" />
+    <Content Include="Pages\act_pic3.aspx" />
+    <Content Include="Pages\act_pic3\1.jpg" />
+    <Content Include="Pages\act_pic3\10.jpg" />
+    <Content Include="Pages\act_pic3\11.jpg" />
+    <Content Include="Pages\act_pic3\12.jpg" />
+    <Content Include="Pages\act_pic3\13.jpg" />
+    <Content Include="Pages\act_pic3\14.jpg" />
+    <Content Include="Pages\act_pic3\15.jpg" />
+    <Content Include="Pages\act_pic3\16.jpg" />
+    <Content Include="Pages\act_pic3\2.jpg" />
+    <Content Include="Pages\act_pic3\3.jpg" />
+    <Content Include="Pages\act_pic3\4.jpg" />
+    <Content Include="Pages\act_pic3\5.jpg" />
+    <Content Include="Pages\act_pic3\6.jpg" />
+    <Content Include="Pages\act_pic3\7.jpg" />
+    <Content Include="Pages\act_pic3\8.jpg" />
+    <Content Include="Pages\act_pic3\9.jpg" />
+    <Content Include="Pages\act_pic3\pcs7.png" />
+    <Content Include="Pages\act_pic4.aspx" />
+    <Content Include="Pages\act_pic4\1.JPG" />
+    <Content Include="Pages\act_pic4\10.jpg" />
+    <Content Include="Pages\act_pic4\11.jpg" />
+    <Content Include="Pages\act_pic4\12.jpg" />
+    <Content Include="Pages\act_pic4\13.jpg" />
+    <Content Include="Pages\act_pic4\14.jpg" />
+    <Content Include="Pages\act_pic4\15.jpg" />
+    <Content Include="Pages\act_pic4\16.jpg" />
+    <Content Include="Pages\act_pic4\17.jpg" />
+    <Content Include="Pages\act_pic4\18.jpg" />
+    <Content Include="Pages\act_pic4\19.JPG" />
+    <Content Include="Pages\act_pic4\2.jpg" />
+    <Content Include="Pages\act_pic4\20.jpg" />
+    <Content Include="Pages\act_pic4\3.jpg" />
+    <Content Include="Pages\act_pic4\4.jpg" />
+    <Content Include="Pages\act_pic4\5.jpg" />
+    <Content Include="Pages\act_pic4\6.jpg" />
+    <Content Include="Pages\act_pic4\7.jpg" />
+    <Content Include="Pages\act_pic4\8.jpg" />
+    <Content Include="Pages\act_pic4\9.jpg" />
+    <Content Include="Pages\act_pic4\pcs7.png" />
+    <Content Include="admin\registeradmin.aspx" />
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\global.css" />
+    <Content Include="bootstrap\css\reset.css" />
+    <Content Include="bootstrap\images\1.jpg" />
+    <Content Include="bootstrap\images\newlogo.png" />
+    <Content Include="bootstrap\images\main_body.png" />
+    <Content Include="Pages\business.aspx" />
+    <Content Include="Pages\calendar.aspx" />
+    <Content Include="images\right1_01.png" />
+    <Content Include="images\right1_02.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="images\right2_03.png" />
+    <Content Include="images\right2_04.png" />
+    <Content Include="images\right2_05.png" />
+    <Content Include="images\right2_06.png" />
+    <Content Include="images\right2_07.png" />
+    <Content Include="images\right2_08.png" />
+    <Content Include="img\image-1.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\thumb-1.jpg" />
+    <Content Include="img\title_logo.png" />
+    <Content Include="img\title_target.png" />
+    <Content Include="img\title_vision.png" />
+    <Content Include="img\title_vision2.png" />
+    <Content Include="Pages\css\cssmenu.css" />
+    <Content Include="Pages\css\download.css" />
+    <Content Include="Pages\css\lightbox.css" />
+    <Content Include="Pages\css\screen.css" />
+    <Content Include="Pages\css\style.css" />
+    <Content Include="Pages\Default.aspx" />
+    <Content Include="Pages\course.aspx" />
+    <Content Include="Pages\download.aspx" />
+    <Content Include="Pages\download_calendar.aspx" />
+    <Content Include="Pages\executives.aspx" />
+    <Content Include="Pages\building.aspx" />
+    <Content Include="Pages\history.aspx" />
+    <Content Include="Pages\image_calendar\title_calendar.png" />
+    <Content Include="Pages\image_course\title_course.png" />
+    <Content Include="Pages\image_default\logo_and_text.png" />
+    <Content Include="Pages\image_download\Adobe-PDF.png" />
+    <Content Include="Pages\image_download\title_download.png" />
+    <Content Include="Pages\image_executive\1.png" />
+    <Content Include="Pages\image_executive\10.png" />
+    <Content Include="Pages\image_executive\11.png" />
+    <Content Include="Pages\image_executive\2.png" />
+    <Content Include="Pages\image_executive\3.png" />
+    <Content Include="Pages\image_executive\4.png" />
+    <Content Include="Pages\image_executive\5.png" />
+    <Content Include="Pages\image_executive\6.png" />
+    <Content Include="Pages\image_executive\7.png" />
+    <Content Include="Pages\image_executive\8.png" />
+    <Content Include="Pages\image_executive\9.png" />
+    <Content Include="Pages\image_executive\title_executive.png" />
+    <Content Include="Pages\image_building\1.jpg" />
+    <Content Include="Pages\image_building\10.jpg" />
+    <Content Include="Pages\image_building\2.jpg" />
+    <Content Include="Pages\image_building\3.jpg" />
+    <Content Include="Pages\image_building\4.jpg" />
+    <Content Include="Pages\image_building\5.jpg" />
+    <Content Include="Pages\image_building\6.jpg" />
+    <Content Include="Pages\image_building\7.jpg" />
+    <Content Include="Pages\image_building\8.jpg" />
+    <Content Include="Pages\image_building\9.jpg" />
+    <Content Include="Pages\image_building\title_building.png" />
+    <Content Include="Pages\image_building\_1.jpg" />
+    <Content Include="Pages\image_building\_10.jpg" />
+    <Content Include="Pages\image_building\_2.jpg" />
+    <Content Include="Pages\image_building\_3.jpg" />
+    <Content Include="Pages\image_building\_4.jpg" />
+    <Content Include="Pages\image_building\_5.jpg" />
+    <Content Include="Pages\image_building\_6.jpg" />
+    <Content Include="Pages\image_building\_7.jpg" />
+    <Content Include="Pages\image_building\_8.jpg" />
+    <Content Include="Pages\image_building\_9.jpg" />
+    <Content Include="Pages\job.aspx" />
+    <Content Include="Pages\logo_color.aspx" />
+    <Content Include="Pages\qa.aspx" />
+    <Content Include="Pages\research.aspx" />
+    <Content Include="Pages\showDetail.aspx" />
+    <Content Include="Pages\shownews.aspx" />
+    <Content Include="Pages\thumpnail2.jpg" />
+    <Content Include="Pages\thumpnail_picture\thumbnail1.jpg" />
+    <Content Include="Pages\thumpnail_picture\thumpnail2.jpg" />
+    <Content Include="Pages\thumpnail_picture\thumpnail3.jpg" />
+    <Content Include="Pages\thumpnail_picture\thumpnail4.jpg" />
+    <Content Include="Pages\thumpnail_picture\thumpnail5.jpg" />
+    <Content Include="Pages\VIP.aspx" />
+    <Content Include="Pages\vision.aspx" />
+    <Content Include="slideshow\images\1.jpg" />
+    <Content Include="slideshow\images\2.jpg" />
+    <Content Include="slideshow\images\3.jpg" />
+    <Content Include="slideshow\images\4.jpg" />
+    <Content Include="slideshow\images\5.jpg" />
+    <Content Include="slideshow\images\flowing-rock.jpg" />
+    <Content Include="slideshow\images\grass-blades.jpg" />
+    <Content Include="slideshow\images\ladybug.jpg" />
+    <Content Include="slideshow\images\lightning.jpg" />
+    <Content Include="slideshow\images\lotus.jpg" />
+    <Content Include="slideshow\images\mojave.jpg" />
+    <Content Include="slideshow\images\pier.jpg" />
+    <Content Include="slideshow\images\sea-mist.jpg" />
+    <Content Include="slideshow\images\stones.jpg" />
+    <Content Include="slideshow\jquery-slideshow.html" />
+    <Content Include="slideshow\js\jquery-1.9.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\addBusiness.aspx.cs">
+      <DependentUpon>addBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addBusiness.aspx.designer.cs">
+      <DependentUpon>addBusiness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addCalendar.aspx.cs">
+      <DependentUpon>addCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addCalendar.aspx.designer.cs">
+      <DependentUpon>addCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addDownload.aspx.cs">
+      <DependentUpon>addDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addDownload.aspx.designer.cs">
+      <DependentUpon>addDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addMarquee.aspx.cs">
+      <DependentUpon>addMarquee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addMarquee.aspx.designer.cs">
+      <DependentUpon>addMarquee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addVip.aspx.cs">
+      <DependentUpon>addVip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addVip.aspx.designer.cs">
+      <DependentUpon>addVip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminnews.aspx.cs">
+      <DependentUpon>adminnews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminnews.aspx.designer.cs">
+      <DependentUpon>adminnews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminshowmarquee.aspx.cs">
+      <DependentUpon>adminshowmarquee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminshowmarquee.aspx.designer.cs">
+      <DependentUpon>adminshowmarquee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminshownews.aspx.cs">
+      <DependentUpon>adminshownews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminshownews.aspx.designer.cs">
+      <DependentUpon>adminshownews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\businessAdmin.aspx.cs">
+      <DependentUpon>businessAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\businessAdmin.aspx.designer.cs">
+      <DependentUpon>businessAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\calendarShowAdmin.aspx.cs">
+      <DependentUpon>calendarShowAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\calendarShowAdmin.aspx.designer.cs">
+      <DependentUpon>calendarShowAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\deleteBusiness.aspx.cs">
+      <DependentUpon>deleteBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\deleteBusiness.aspx.designer.cs">
+      <DependentUpon>deleteBusiness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\deleteCalendar.aspx.cs">
+      <DependentUpon>deleteCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\deleteCalendar.aspx.designer.cs">
+      <DependentUpon>deleteCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\deleteDownload.aspx.cs">
+      <DependentUpon>deleteDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\deleteDownload.aspx.designer.cs">
+      <DependentUpon>deleteDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\deleteVip.aspx.cs">
+      <DependentUpon>deleteVip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\deleteVip.aspx.designer.cs">
+      <DependentUpon>deleteVip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\downloadShowAdmin.aspx.cs">
+      <DependentUpon>downloadShowAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\downloadShowAdmin.aspx.designer.cs">
+      <DependentUpon>downloadShowAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\HomeAdmin.aspx.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\HomeAdmin.aspx.designer.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\marqueeAdmin.aspx.cs">
+      <DependentUpon>marqueeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\marqueeAdmin.aspx.designer.cs">
+      <DependentUpon>marqueeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vipAdmin.aspx.cs">
+      <DependentUpon>vipAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vipAdmin.aspx.designer.cs">
+      <DependentUpon>vipAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB\dataConnect.cs" />
+    <Compile Include="Pages\act_pic1.aspx.cs">
+      <DependentUpon>act_pic1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\act_pic1.aspx.designer.cs">
+      <DependentUpon>act_pic1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\act_pic2.aspx.cs">
+      <DependentUpon>act_pic2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\act_pic2.aspx.designer.cs">
+      <DependentUpon>act_pic2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\act_pic3.aspx.cs">
+      <DependentUpon>act_pic3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\act_pic3.aspx.designer.cs">
+      <DependentUpon>act_pic3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\act_pic4.aspx.cs">
+      <DependentUpon>act_pic4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\act_pic4.aspx.designer.cs">
+      <DependentUpon>act_pic4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\registeradmin.aspx.cs">
+      <DependentUpon>registeradmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\registeradmin.aspx.designer.cs">
+      <DependentUpon>registeradmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\business.aspx.cs">
+      <DependentUpon>business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\business.aspx.designer.cs">
+      <DependentUpon>business.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\calendar.aspx.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\calendar.aspx.designer.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KtechMaster.Master.cs">
+      <DependentUpon>KtechMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KtechMaster.Master.designer.cs">
+      <DependentUpon>KtechMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\course.aspx.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\course.aspx.designer.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\download_calendar.aspx.cs">
+      <DependentUpon>download_calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\download_calendar.aspx.designer.cs">
+      <DependentUpon>download_calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\executives.aspx.cs">
+      <DependentUpon>executives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\executives.aspx.designer.cs">
+      <DependentUpon>executives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\building.aspx.cs">
+      <DependentUpon>building.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\building.aspx.designer.cs">
+      <DependentUpon>building.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\history.aspx.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\history.aspx.designer.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\job.aspx.cs">
+      <DependentUpon>job.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\job.aspx.designer.cs">
+      <DependentUpon>job.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\logo_color.aspx.cs">
+      <DependentUpon>logo_color.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\logo_color.aspx.designer.cs">
+      <DependentUpon>logo_color.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\qa.aspx.cs">
+      <DependentUpon>qa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\qa.aspx.designer.cs">
+      <DependentUpon>qa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\research.aspx.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\research.aspx.designer.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\showDetail.aspx.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\showDetail.aspx.designer.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\shownews.aspx.cs">
+      <DependentUpon>shownews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\shownews.aspx.designer.cs">
+      <DependentUpon>shownews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VIP.aspx.cs">
+      <DependentUpon>VIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\VIP.aspx.designer.cs">
+      <DependentUpon>VIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\vision.aspx.cs">
+      <DependentUpon>vision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\vision.aspx.designer.cs">
+      <DependentUpon>vision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyPicture\" />
+    <Folder Include="Pages\PDF\business\" />
+    <Folder Include="Pages\PDF\download\" />
+    <Folder Include="Pages\PDF\vip\" />
+    <Folder Include="Pages\showpicture\location\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KtechMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pages\PDF\01Transcripts.pdf" />
+    <None Include="Pages\PDF\02.pdf" />
+    <None Include="Pages\PDF\03.pdf" />
+    <None Include="Pages\PDF\04.pdf" />
+    <None Include="Pages\PDF\05.pdf" />
+    <None Include="Pages\PDF\06.pdf" />
+    <None Include="Pages\PDF\07.pdf" />
+    <None Include="Pages\PDF\08.pdf" />
+    <None Include="Pages\PDF\09.pdf" />
+    <None Include="Pages\PDF\10asstention.pdf" />
+    <None Include="Pages\PDF\11.pdf" />
+    <None Include="Pages\PDF\12.pdf" />
+    <None Include="Pages\PDF\13.pdf" />
+    <None Include="Pages\PDF\14calendar.pdf" />
+    <None Include="Pages\PDF\15.pdf" />
+    <Content Include="Admin.Master" />
+    <None Include="Pages\PDF\calendar\2536.pdf" />
+    <None Include="slideshow\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7296</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

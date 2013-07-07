@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KtechMaster.master.cs"
+    Inherits="WebsiteKtech.KtechMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js" type="text/css" media="screen" />
+    <link href="Pages/css/cssmenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="body" class="container body">
+            <div class="container head">            
+                <div class="row menu btn-toolbar" style="margin-bottom:-36px;"><!--drop down menu -->
+                    <div id='cssmenu' style="margin-right:100;padding:0px;">
+                        <ul>
+                            <li class='has-sub'><a href='../Pages/Default.aspx'><span>หน้าแรก</span></a></li>
+                            <li class='has-sub'><a href='#'><span>K-Tech</span></a>
+                            <ul>
+                                <li ><a href='../Pages/vision.aspx'><span>วิสัยทัศน์-พันธกิขจ-เป้าหมาย</span></a></li>
+                                <li ><a href="../Pages/executives.aspx"><span>ทำเนีบยผู้บริหาร</span></a></li>
+                                <li ><a href='../Pages/history.aspx'><span>ประวัติความเป็นมา</span></a></li>
+                                <li ><a href='../Pages/logo_color.aspx'><span>ตราและสีประจำวิทยาลัย</span></a></li>
+                                <li ><a href='../Pages/building.aspx'><span>อาคาร สถานที่</span></a></li>
+                                <li class="last"><a href='../Pages/course.aspx'><span>หลักสูตร</span></a></li>
+                            </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'><span>ดาวน์โหลด</span></a>
+                            <ul>
+                                <li><a href="../Pages/download_calendar.aspx"><span>ปฏิทินการศึกษา</span></a></li>
+                                <li><a href='../Pages/download.aspx'><span>แบบฟอร์ม</span></a></li>
+                                <li class='last'><a href="../Pages/business.aspx"><span>ธุรกิจค้าปลีก</span></a></li>
+                            </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'><span>อื่นๆ</span></a>
+                            <ul>
+                                <li><a href="../Pages/qa.aspx"><span>ประกันสุขภาพการศึกษา</span></a></li> 
+                                <li><a href="../Pages/research.aspx"><span>วิจัยนวัตกรรม</span></a></li> 
+                                <li><a href="../Pages/job.aspx"><span>ตำแหน่งงานว่างสำหรับนักศึกษา</span></a></li>   
+                                <li><a href="../admin/HomeAdmin.aspx"><span>สำหรับ Admin</span></a></li>  
+                            </ul>
+                            </li>
+                       </ul>
+                    </div>
+                </div><!--end drop down menu -->
+           
+            <div class="row main" style="margin-top:49px;">
+                <div class="span4 leftmain">
+                    <img class="leader" alt="" src="../images/right1_01.png" />
+                    <img class="leader2" alt="" src="../images/right1_02.png"/>
+                    <a href="http://www.studentloan.or.th/index.php" target="_blank"><img class="otherlink" alt="" src="../images/right2_03.png" /></a>
+                    <a href="http://www.opec.go.th/" target="_blank"><img class="otherlink" alt="" src="../images/right2_04.png" /></a>
+                    <a href="http://www.ksp.or.th/" target="_blank"><img class="otherlink" alt="" src="../images/right2_05.png" /></a>
+                    <a href="http://www.niets.or.th/" target="_blank"><img class="otherlink" alt="" src="../images/right2_06.png" /></a>
+                    <a href="http://www.iloveradioone.com/" target="_blank"><img class="otherlink" alt="" src="../images/right2_07.png" /></a>
+                    <a href="http://www.khonkaenlink.info/" target="_blank"><img class="otherlink" alt="" src="../images/right2_08.png" /></a>
+                    <a href="http://www.panyapiwat.ac.th/index.php" target="_blank"><img class="otherlink" alt="" src="../images/MOU.png" /></a>
+                    <a href="../Pages/VIP.aspx" target="_self"><img class="otherlink" alt="" src="../images/for_vip.png" /></a>
+                </div>
+                <div class="span6 rightmain">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer" style="margin-top:10px;">
+     <p>วิทยาลัยเทคโนโลยีการจัดการขอนแก่น (เค-เทค)<br />
+        เลขที่ 118/1 ถ.ราษฏร์คนึง ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000 โทรศัพท์ 043-331224 โทรสาร 043-331224-105
+     </p> 
+     </div>
+     </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="WebsiteKtech.Site1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js" type="text/css" media="screen" />
+    <link href="Pages/css/cssmenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="body" class="container body">
+            <div class="container head">
+            
+                <div class="row menu btn-toolbar" style="margin-bottom:-36px;"><!--drop down menu -->
+
+                    <div id='cssmenu' style="margin-right:100;padding:0px;">
+                        <ul>
+                            <li class='has-sub'><a href='../Pages/Default.aspx'><span>หน้าแรก</span></a></li>
+                            <li class='has-sub'><a href='#'><span>สำหรับแอดมิน</span></a>
+                            <ul>
+                                <li ><a href="../admin/registeradmin.aspx"><span>ลงทะเบียนแอดมิน</span></a></li>
+                                <li ><a href="../admin/News.aspx"><span>เพิ่มข่าว</span></a></li>
+                                <li ><a href="../admin/adminnews.aspx"><span>ดู/ลบ ข่าว</span></a></li>
+                                <li ><a href="../admin/addCalendar.aspx"><span>เพิ่มปฏิทินการศึกษา</span></a></li>
+                                <li ><a href="../admin/calendarShowAdmin.aspx"><span>ดู/ลบ ปฏทินการศึกษา</span></a></li>
+                                <li ><a href="../admin/addDownload.aspx"><span>เพิ่มไฟล์ดาวน์โหลด</span></a></li>
+                                <li ><a href="../admin/downloadShowAdmin.aspx"><span>ดู/ลบ ไฟล์ดาวน์โหลด</span></a></li>
+                                <li ><a href="../admin/addBusiness.aspx"><span>เพิ่มไฟล์ธุรกิจค้าปลีก</span></a></li>
+                                <li ><a href="../admin/businessAdmin.aspx"><span>ดู/ลบ ไฟล์ธุรกิจค้าปลีก</span></a></li>
+                                <li ><a href="../admin/addVip.aspx"><span>เพิ่มไฟล์สำหรับนักศึกษาภาคสมทบ</span></a></li>
+                                <li ><a href="../admin/vipAdmin.aspx"><span>ดู/ลบ ไฟล์สำหรับนักศึกษาภาคสมทบ</span></a></li>
+                                <li ><a href="../admin/addMarquee.aspx"><span>เพิ่มตัวหนังสือวิ่ง</span></a></li>
+                                <li ><a href="../admin/marqueeAdmin.aspx"><span>ดู/ลบ ตัวหนังสือวิ่ง</span></a></li>
+                                <li class="last"><a href="../admin/Logout.aspx"><span>Logout</span></a></li>
+                                
+                            </ul>
+                            </li>
+                            
+                       </ul>
+                    </div>
+                </div><!--end drop down menu -->
+           
+            <div class="row main" style="margin-top:49px;">
+                <div class="span4 leftmain">
+                    <img class="leader" alt="" src="../images/right1_01.png" />
+                    <img class="leader2" alt="" src="../images/right1_02.png"/>
+                    <img class="otherlink" alt="" src="../images/right2_03.png" />
+                    <img class="otherlink" alt="" src="../images/right2_04.png" />
+                    <img class="otherlink" alt="" src="../images/right2_05.png" />
+                    <img class="otherlink" alt="" src="../images/right2_06.png" />
+                    <img class="otherlink" alt="" src="../images/right2_07.png" />
+                    <img class="otherlink" alt="" src="../images/right2_08.png" />
+                    <a href="http://www.panyapiwat.ac.th/index.php" target="_blank"><img class="otherlink" alt="" src="../images/MOU.png" /></a>
+                    <a href="http://www.panyapiwat.ac.th/index.php" target="_blank"><img class="otherlink" alt="" src="../images/for_vip.png" /></a>
+                </div>
+                <div class="span6 rightmain">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer" style="margin-top:10px;">
+     <p>วิทยาลัยเทคโนโลยีการจัดการขอนแก่น (เค-เทค)<br />
+        เลขที่ 118/1 ถ.ราษฏร์คนึง ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000 โทรศัพท์ 043-331224 โทรสาร 043-331224-105
+     </p> 
+     </div>
+     </div>
+    </form>
+</body>
+</html>
